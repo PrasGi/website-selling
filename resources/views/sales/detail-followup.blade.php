@@ -12,16 +12,16 @@
         }
 
         .header {
-            position: fixed;
-            z-index: 10;
-            background-color: white;
-            display: block;
-            width: 100%;
-            padding-top: 50px;
+            /* position: fixed;
+                        z-index: 10;
+                        background-color: white;
+                        display: block;
+                        width: 100%;
+                        padding-top: 50px; */
         }
 
         .content {
-            margin-top: 120px;
+            /* margin-top: 120px; */
         }
 
         .color-save-button {
@@ -32,7 +32,7 @@
 
 
 @section('content')
-    <div class="h4 text-dark border-bottom border-dark header">
+    <div class="h4 pb-2 mb-4 mt-5 text-dark border-bottom border-dark">
         <a class="btn btn-light mb-2" href="{{ route('followupIndexSales') }}">
             <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-left" viewBox="0 0 16 16">
