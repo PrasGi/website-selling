@@ -24,7 +24,7 @@
     @enderror
 
     <!-- Modal add -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    {{-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -52,10 +52,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- end Modal add --}}
 
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    {{-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-person-add" viewBox="0 0 16 16">
             <path
@@ -63,17 +63,17 @@
             <path
                 d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
         </svg> add new
-    </button>
+    </button> --}}
 
-    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#update-me-modal">
+    {{-- <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#update-me-modal">
         <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-person" viewBox="0 0 16 16">
             <path
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
         </svg> Edit me
-    </button>
+    </button> --}}
 
-    <div class="mt-3">
+    {{-- <div class="mt-3">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -108,11 +108,11 @@
                 @endforeach
             </tbody>
         </table>
-    </div>
+    </div> --}}
 
     <!-- Delete Confirmation Modal -->
     @foreach ($users as $user)
-        <div class="modal fade" id="deleteModal{{ $user->id }}" data-bs-backdrop="static" data-bs-keyboard="false"
+        {{-- <div class="modal fade" id="deleteModal{{ $user->id }}" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="deleteModalLabel{{ $user->id }}" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -130,14 +130,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     @endforeach
     {{-- end Confirmation Modal --}}
 
     {{-- modal update --}}
     @foreach ($users as $user)
-        <div class="modal fade" id="update-modal-{{ $user->id }}" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="update-modal-{{ $user->id }}" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

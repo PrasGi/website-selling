@@ -100,7 +100,7 @@
     @endforeach
     {{-- end Modal follow --}}
 
-    <div class="row justify-content-start">
+    {{-- <div class="row justify-content-start">
         @if (auth()->user()->role_id != 1)
             <div class="col-2">
                 <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -122,10 +122,10 @@
                 <button class="btn btn-outline-warning" type="submit">Search</button>
             </form>
         </div>
-    </div>
+    </div> --}}
 
     {{-- data --}}
-    <div class="mt-3">
+    {{-- <div class="mt-3">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -193,6 +193,6 @@
                 @endforeach
             </tbody>
         </table>
-    </div>
+    </div> --}}
     {{-- end data --}}
 @endsection
